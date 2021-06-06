@@ -353,25 +353,6 @@ Yena
 
 ```
 
-* `just() 연산자`
-
-just()는 해당 아이템을 그대로 발행하는 Observable을 생성해준다. <br>
-just() 연산자의 인자로 넣은 아이템을 차례로 발행하며, 한 개의 아이템을 넣을 수도 있고, 타입이 같은 여러 아이템을 넣을 수도 있다.
-
-```java
-
-Observable<String> source = Observable.just("Hello", "Yena");
-source.subscribe(System.out::println());
-
-[출력결과]
-Hello
-Yena
-
-```
-
-
-
-* `interval`
 
 * Rxjava에서 Observable => flow api에 Publisher 역할을 / Observer는 Flow의 Subscriber 역할을
 * RxJava에서는 Observable을 구독하는 Observer가 존재하고, Observable이 순차적으로 발행하는 데이터에 대해서 반응한다. 
